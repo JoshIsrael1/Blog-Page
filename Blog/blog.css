@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+padding: 1;
+margin: 1;
+font-family: 'Source Sans Pro', sans-serif;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #003344;
+}
+
+.navbar{
+        display: flex;
+        justify-content: flex-start;
+        background-color: #000000;
+    }
+
+    .navbar .main {
+        list-style: none;
+        position: relative;
+      }
+
+      .main li {
+        position: relative;
+        display: inline-block;
+        color: rgb(247, 244, 244);
+        height: 40px;
+      }
+
+      .main li a {
+        display: block;
+        height: 100%;
+        padding: 10px;
+        color: #fdfdfd;
+        font-size: 14px;
+        text-decoration: none;
+        background-color: #000000;
+        transition: 0.1s ease-in;
+      }
+
+      .main li a:hover {
+        background-color: #ffffff;
+        color: #090b0d;
+      }
+
+      .sub-guy{
+          position: relative;
+      }
+
+      .sub-guy a svg {
+        height: 20px;
+        width: 20px;
+        fill: #9fb3bf;
+        transition: 0.3s ease;
+      }
+
+      .sub-guy a:hover svg {
+        fill: #090b0d;
+      }
+      
+      .sub-guy ul {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        width: 150px;
+        transition: 0.5s ease;
+      }
+    
+      .sub-guy ul li {
+        width: 100%;
+        border-bottom: 1px solid #425059;
+      }
+      
+      .sub-guy ul li a {
+        color: #090b0d;
+        background-color: #ffffff;
+      }
+    
+      .sub-guy ul li a:hover {
+        color: #ffffff;
+        background-color: #090b0d;
+      }
+      
+      .sub-guy:hover ul {
+        opacity: 1;
+        display: block;
+      }
+      
+      .sub-guy:hover a svg {
+        transform: rotate(270deg);
+      }
+
+      .title {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 3rem;
+        margin-bottom: 70px;
+      }
+
+      .title, h1 {
+        font-size: 40px;
+        font-weight: 400;
+        font-style: oblique;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+      }
+      
+      .subtitle {
+        color: #ffffff;
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      .bi {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-style: normal;
+      }
+
+      .profile-image {
+        background: url("/Touch.jpg") center center no-repeat;
+        background-size: cover;
+        border: 6px solid #000000;
+        height: 300px;
+        width: 250px;
+        border-radius: 300px;
+        position: relative;
+      } 
+      
+      .profile-image::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
+        border: 6px solid #ffffff;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        border-radius: 300px;
+      }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+  }
+
+  .profile-image-1 {
+    background: url("/Prime.jpg") center center no-repeat;
+    background-size: cover;
+    border: 6px solid #000000;
+    height: 300px;
+    width: 250px;
+    border-radius: 300px;
+    position: relative;
+  } 
+  
+  .profile-image-1::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    border: 6px solid #ffffff;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 300px;
+  }
+
+.grid-1 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 100px;
+}
+
+      .footer {
+        color: #fff;
+        text-align: center;
+        box-sizing: border-box;
+        font-weight: 500;
+      }
+      
